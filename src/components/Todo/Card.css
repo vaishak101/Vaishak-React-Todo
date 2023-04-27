@@ -1,32 +1,76 @@
 .card_wrap {
+  margin: 50px 30px;
+  box-shadow: 0 10px 40px #9df1df85;
   padding: 20px;
-  border: 2px solid #d3d3d3;
   border-radius: 20px;
-}
-
-input {
-  border: 1px solid;
-  padding: 10px;
-  border-radius: 10px;
+  border: 1px solid #d3d3d3;
 }
 
 .add_todo_section {
+  position: relative;
   margin-bottom: 50px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid #000;
+  border: 2px solid #d3d3d3;
+  transition: padding 0.2s ease;
 }
-
-.add_todo {
-  flex: 1;
+.add_todo_section .left-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+  margin-right: 30px;
+}
+.add_todo_section .left-wrap .add_todo {
   max-width: 500px;
 }
 
-.list_section {
-  border: 1px solid #000;
+@media screen and (max-width: 600px) {
+  .card_wrap {
+    margin: 20px 0;
+  }
+  .add_todo_section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .add_todo_section .left-wrap {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+}
+
+input {
+  border: 2px solid #3c84ab;
   padding: 10px;
   border-radius: 10px;
+  font-size: 24px;
+}
+
+.list_section {
+  padding: 20px 10px;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px #d3d3d3d3;
+}
+.error {
+  color: red;
+  margin: 10px 0;
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  animation: fadeIn 1s ease;
+}
+.error-wrap {
+  padding: 20px 20px 40px 20px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

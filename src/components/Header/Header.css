@@ -1,0 +1,64 @@
+.header {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo_wrap {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+.header .logo_wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.header .logo_wrap:hover {
+  box-shadow: 0 5px 10px cyan;
+}
+
+.header .title_wrap {
+  background: linear-gradient(-65deg, #00ffca, #e73c7e, #7149c6, #f94a29);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  background-clip: text;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+.header .title {
+  color: transparent;
+}
+
+.header .title_wrap:hover {
+  transform: scale(1.1);
+  animation-duration: 0.5s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 20px 0;
+  }
+  .header .logo_wrap {
+    width: 50px;
+    height: 50px;
+  }
+  .header .title {
+    font-size: 24px;
+  }
+}
