@@ -1,0 +1,7 @@
+.common {
+  width: 150px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: wheat;
+  border-radius: 10px;
+}

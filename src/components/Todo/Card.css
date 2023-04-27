@@ -1,0 +1,32 @@
+.card_wrap {
+  padding: 20px;
+  border: 2px solid #d3d3d3;
+  border-radius: 20px;
+}
+
+input {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.add_todo_section {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.add_todo {
+  flex: 1;
+  max-width: 500px;
+}
+
+.list_section {
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 10px;
+}
