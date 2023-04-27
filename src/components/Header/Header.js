@@ -1,11 +1,14 @@
+import './Header.css';
 import Logo from '../../assets/V-studio.webp'
 function Header() {
-  return(
-    <header className='py-4 flex items-center justify-between'>
-      <div className='w-20 h-20 rounded-full overflow-hidden '>
-      <img src={Logo} alt="V-studio" className='cursor-pointer'/>
+  return (
+    <header className='header'>
+      <div className='logo_wrap'>
+        <img src={Logo} alt="V-studio" className='cursor-pointer' />
       </div>
-      <h1 className=' text-3xl font-bold ease-in duration-300 hover:text-bermuda'>Todo React App</h1>
+      <div className="title_wrap">
+        <h1 className='title'>React Todo App</h1>
+      </div>
     </header>
   )
 }

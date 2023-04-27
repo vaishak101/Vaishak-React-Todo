@@ -1,6 +1,6 @@
 import './Button.css'
-export default function Button({ handleClick, text }) {
+export default function Button({ handleClick, text, styleClass }) {
   return (
-    <button className="common" onClick={handleClick}>{text}</button>
+    <button className={`${styleClass} common`} onClick={handleClick}>{text}</button>
   )
 }

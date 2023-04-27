@@ -1,7 +1,29 @@
 .common {
-  width: 150px;
+  width: 100%;
+  max-width: 150px;
   padding: 10px 20px;
-  border: 1px solid black;
+  border: 1px solid #362fd9;
   background: wheat;
   border-radius: 10px;
+  font-weight: 700;
+}
+
+.add {
+  background: greenyellow;
+}
+.update {
+  background: greenyellow;
+}
+.edit {
+  background: orange;
+}
+.delete {
+  background: red;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .common {
+    max-width: 100%;
+  }
 }

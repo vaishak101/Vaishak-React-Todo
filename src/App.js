@@ -17,14 +17,14 @@ function App() {
     dispatch(removeTodo(removeTodoID))
   }
 
-  function updateTodo(todoId, newValue) {
-    dispatch(editTodo({ id: todoId, title: newValue }))
+  function updateTodo(todoId, newValue, status) {
+    dispatch(editTodo({ id: todoId, title: newValue, isDone: status }))
   }
 
   localStorage.setItem('todo', JSON.stringify(todo));
 
   return (
-    <div className="container mx-auto">
+    <div className="container">
       <Header />
       <Card todo={todo} handleAddTodo={handleAddTodo} deleteTodo={deleteTodo} updateTodo={updateTodo} />
     </div>

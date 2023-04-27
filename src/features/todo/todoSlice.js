@@ -20,7 +20,7 @@ export const todoSlice = createSlice({
     editTodo: (state, action) => {
       const transformed = state.value.map((item) => {
         if (item.id === action.payload.id) {
-          return { id: action.payload.id, title: action.payload.title }
+          return { id: action.payload.id, title: action.payload.title, isDone: action.payload.isDone }
         }
         else {
           return item
