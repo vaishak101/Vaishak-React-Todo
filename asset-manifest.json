@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/vaishak-react-todo/static/css/main.858139eb.css",
-    "main.js": "/vaishak-react-todo/static/js/main.294702e9.js",
+    "main.js": "/vaishak-react-todo/static/js/main.32ebea0e.js",
     "static/js/787.06469d7b.chunk.js": "/vaishak-react-todo/static/js/787.06469d7b.chunk.js",
+    "service-worker.js": "/vaishak-react-todo/service-worker.js",
     "static/media/V-studio.webp": "/vaishak-react-todo/static/media/V-studio.8b797dcb83d3bb7ddfa2.webp",
     "index.html": "/vaishak-react-todo/index.html",
     "main.858139eb.css.map": "/vaishak-react-todo/static/css/main.858139eb.css.map",
-    "main.294702e9.js.map": "/vaishak-react-todo/static/js/main.294702e9.js.map",
+    "main.32ebea0e.js.map": "/vaishak-react-todo/static/js/main.32ebea0e.js.map",
     "787.06469d7b.chunk.js.map": "/vaishak-react-todo/static/js/787.06469d7b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.858139eb.css",
-    "static/js/main.294702e9.js"
+    "static/js/main.32ebea0e.js"
   ]
 }
