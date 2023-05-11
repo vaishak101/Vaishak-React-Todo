@@ -1,6 +1,6 @@
 {
-  "short_name": "VN Todo",
-  "name": "Vaishak's Todo App",
+  "short_name": "Vaishak'src Todo",
+  "name": "Vaishak's Todo App Built on React",
   "icons": [
     {
       "src": "favicon.ico",
